@@ -1,2 +1,51 @@
-# GFM viewer file
-*.md.html
+# === OS generated files ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# === IDE & Editors ===
+# macOS & VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ / JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim / Emacs
+*~
+*.swp
+*.swo
+
+# === Environment Variables & Secrets ===
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# === Logs & Databases ===
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.sqlite
+*.sqlite3
+
+# === Common Build Output & Dependencies ===
+dist/
+build/
+out/
+bin/
+node_modules/
+vendor/

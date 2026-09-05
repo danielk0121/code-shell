@@ -1,0 +1,18 @@
+REPO_NAME="notipass"
+GITHUB_ACCOUNT="danielk0121"
+REPO_DIR_PATH="~/ws/notipass"
+
+mkdir $REPO_DIR_PATH
+cd $REPO_DIR_PATH
+
+gh repo create $REPO_NAME --public
+
+git init
+git branch -M main
+echo "# My Project" > README.md
+git add README.md
+git commit -m "docs: Initial commit with README"
+git remote add origin https://github.com/$GITHUB_ACCOUNT/$REPO_NAME.git
+git push -u origin main
+
+git --no-pager log -n 5 --oneline
